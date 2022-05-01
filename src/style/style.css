@@ -1,7 +1,6 @@
 /* Layout */
 
 .container {
-    background-color: yellow;
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -10,7 +9,6 @@
 /* Component */
 .main {
     padding: 91px 0 135px ;
-    background-color: pink;
 }
 
 .footer {
@@ -18,15 +16,15 @@
 }
 
 .cinemalist-page {
+    padding: 41px 28px 31px 29px;
+    text-align: center;
     background-color: #fff;
+    border: 2px solid #bdbdbd;
+    border-radius: 15px;
 }
 
 .cinemalist-footer {
     background-color: aquamarine;
-}
-
-.cinemalist-page {
-    padding: 41px 28px 31px 29px;
 }
 
 .cinemalist-lists {
@@ -40,3 +38,101 @@
     grid-template-rows: 1fr 1fr;
 }
 
+.cinemalist-lists .lists-poster {
+    box-sizing: border-box;
+    /* padding: 19px 20px 0; */
+    border: 1px solid #bdbdbd;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px #0000004D;
+}
+
+.cinemalist-lists  .lists-poster img {
+    display: block;
+    width: 180px;
+    height: 250px;
+    margin: 19px 20px 11px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.cinemalist-lists .lists-poster h2 {
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.cinemalist-lists .lists-poster dl {
+    margin: 0 20px 18px;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.cinemalist-lists .lists-poster dl div {
+    display: inline-block;
+    /* margin-bottom: 5px; */
+}
+
+.cinemalist-lists .lists-poster dl div+div {
+    margin-top: 5px;
+}
+
+.cinemalist-lists .lists-poster dl div:nth-child(1) {
+    margin-right: 42px;
+}
+
+.cinemalist-lists .lists-poster dl div:nth-child(2) {
+    margin-top: 0;
+}
+
+.cinemalist-lists .lists-poster dl div:nth-child(2) dd::before {
+    content: '';
+    float: left;
+    width: 14px;
+    height: 14px;
+    margin-right: 4px;
+    vertical-align: bottom;
+    background-image: url(../img/별점이미지.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cinemalist-lists .lists-poster dt {
+    color:#828282;
+} 
+
+.cinemalist-lists .lists-poster .lists-button {
+    display: flex;
+}
+
+.cinemalist-lists .lists-poster .lists-button button {
+    flex-grow: 1;
+    padding: 9px 27px 12px;
+    border-top: 1px solid #bdbdbd;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cinemalist-lists .lists-poster .lists-button button:nth-child(1) {
+    border-right: 1px solid #bdbdbd;
+    border-bottom-left-radius: 10px;
+}
+
+.cinemalist-lists .lists-poster .lists-button button:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 27px 12px;
+    border-bottom-right-radius: 10px;
+}
+
+.cinemalist-lists .lists-poster .lists-button button:nth-child(2)::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(../img/영화목록페이지/아이콘_재생.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
