@@ -1,0 +1,42 @@
+/* Layout */
+
+.container {
+    background-color: yellow;
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+
+/* Component */
+.main {
+    padding: 91px 0 135px ;
+    background-color: pink;
+}
+
+.footer {
+    background-color: cornflowerblue;
+}
+
+.cinemalist-page {
+    background-color: #fff;
+}
+
+.cinemalist-footer {
+    background-color: aquamarine;
+}
+
+.cinemalist-page {
+    padding: 41px 28px 31px 29px;
+}
+
+.cinemalist-lists {
+    padding: 27px;
+}
+
+.cinemalist-lists ul{
+    display: grid;
+    gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
