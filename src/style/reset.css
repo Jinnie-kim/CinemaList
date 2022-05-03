@@ -1,4 +1,4 @@
-body, h1, h2, ul, dl, dd {
+body, h1, h2, h3, ul, dl, dd {
     margin: 0;
     padding: 0;
 }
@@ -21,3 +21,17 @@ button {
     cursor: pointer;
     font-family: 'Noto Sans KR', sans-serif;
 }
+
+a {
+    text-decoration: none;
+}
+
+.ir_text{
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -9999px;
+    line-height: 0;
+    Font-size: 1px;
+    color: transparent;
+  }
