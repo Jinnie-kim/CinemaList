@@ -123,13 +123,16 @@
     margin-top: 0;
 }
 
-.cinemalist-lists .lists-poster dl div:nth-child(2) dd::before {
+.cinemalist-lists .lists-poster dl div:nth-child(2) .ratings {
+    line-height: 14px;
+}
+
+.cinemalist-lists .lists-poster dl div:nth-child(2) .ratings::before {
     content: '';
     float: left;
     width: 14px;
     height: 14px;
     margin-right: 4px;
-    vertical-align: bottom;
     background-image: url(../img/별점이미지.png);
     background-repeat: no-repeat;
     background-size: cover;
