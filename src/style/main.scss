@@ -1,0 +1,41 @@
+$footer-color : #4f4f4f;
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin background-img($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cinemalist-lists .lists-poster .lists-button button:nth-child(2) {
+    @include flexCenter();
+}
+
+.cinemalist-footer .footer-top {
+    @include flexCenter();
+}
+
+.cinemalist-footer .footer-bottom {
+    @include flexCenter()
+}
+
+.cinemalist-footer .footer-bottom {
+    strong {
+        color: $footer-color;
+    }
+    .company-info {
+        color: $footer-color;
+    }
+}
+
+.cinemalist-lists .lists-poster dl div:nth-child(2) .ratings::before {
+    @include background-img('../img/별점이미지.png');
+}
+
+.cinemalist-lists .lists-poster .lists-button button:nth-child(2)::before {
+    @include background-img('../img/영화목록페이지/아이콘_재생.png');
+}
