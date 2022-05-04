@@ -1,0 +1,48 @@
+@charset "UTF-8";
+.cinemalist-lists .lists-poster .lists-button button:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cinemalist-footer .footer-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cinemalist-footer .footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.cinemalist-footer .footer-bottom strong {
+  color: #4f4f4f;
+}
+
+.cinemalist-footer .footer-bottom .company-info {
+  color: #4f4f4f;
+}
+
+.cinemalist-lists .lists-poster dl div:nth-child(2) .ratings::before {
+  background-image: url("../img/별점이미지.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cinemalist-lists .lists-poster .lists-button button:nth-child(2)::before {
+  background-image: url("../img/영화목록페이지/아이콘_재생.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*# sourceMappingURL=main.css.map */
